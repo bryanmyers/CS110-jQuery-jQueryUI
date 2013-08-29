@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>jQuery Intermediate II</title>
+    <meta charset="utf-8" />
+  	<link rel="stylesheet" type="text/css" href="mystyles.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> 
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  	<script src="myscript.js"></script>
+
+  </head>
+  <body>
+    <div class="all_container">
+      <h1>jQuery Exercise: Intermediate II</h1>
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Image Puzzle</a></li>
+          <li><a href="#tabs-2">Image Changing</a></li>
+        </ul>
+        <div id="tabs-1">
+          <div class="item_container_left">
+            <p>Drag the images to solve the puzzle.</p>
+          </div>
+          <div class="item_container_right">
+            <ul id="puzzle_list">
+              <li><img class="my_images" src="ninja3.jpg" alt="The same ninja photo"></li>
+              <li><img class="my_images" src="ninja1.jpg" alt="The same ninja photo"></li>
+              <li><img class="my_images" src="ninja5.jpg" alt="The same ninja photo"></li>
+              <li><img class="my_images" src="ninja2.jpg" alt="The same ninja photo"></li>
+              <li><img class="my_images" src="ninja4.jpg" alt="The same ninja photo"></li>
+          </ul>
+          </div>
+        </div>
+        <div id="tabs-2">
+          <div class="item_container_left">
+            <p>Click on each image slice to change the overall picture.</p>
+            <p>Originally I tried to do this with replaceWith but then figured out that you can only replaceWith an element and src is an attribute (thanks Elyem!). Using .attr worked. 
+          </div>
+          <div class="item_container_right">
+            <ul id="change_list">
+              <li id="li_1"><img src="ninja1.jpg" alt="piece 1"></li>
+              <li id="li_2"><img src="ninja2.jpg" alt="piece 2"></li>
+              <li id="li_3"><img src="ninja3.jpg" alt="piece 3"></li>
+              <li id="li_4"><img src="ninja4.jpg" alt="piece 4"></li>
+              <li id="li_5"><img src="ninja5.jpg" alt="piece 5"></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

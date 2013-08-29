@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>jQuery Intermediate I</title>
+    <meta charset="utf-8" />
+  	<link rel="stylesheet" type="text/css" href="mystyles.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> 
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  	<script src="myscript.js"></script>
+
+  </head>
+  <body>
+    <div class="all_container">
+      <h1>jQuery Exercise: Intermediate I</h1>
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Disappearing Images</a></li>
+          <li><a href="#tabs-2">HTML Form</a></li>
+        </ul>
+        <div id="tabs-1">
+          <div class="item_container_left">
+            <p>Click on any image and it should disappear.  Click on the restore button to make them all reappear.</p>
+          </div>
+          <div class="item_container_right">
+            <img class="my_images" src="jquery-ninja.png" alt="The same ninja photo">
+            <img class="my_images" src="jquery-ninja.png" alt="The same ninja photo">
+            <img class="my_images" src="jquery-ninja.png" alt="The same ninja photo">
+            <img class="my_images" src="jquery-ninja.png" alt="The same ninja photo">
+            <img class="my_images" src="jquery-ninja.png" alt="The same ninja photo">
+            <img class="my_images" src="jquery-ninja.png" alt="The same ninja photo">
+            <img class="my_images" src="jquery-ninja.png" alt="The same ninja photo">
+            <img class="my_images" src="jquery-ninja.png" alt="The same ninja photo">
+            <div id="div_clear"></div>
+            <button id="restore_us">Restore</button>
+          </div>
+        </div>
+        <div id="tabs-2">
+          <div class="item_container_left">
+            <p>Pick two dates and JQueryUI will display your form contents</p>
+          </div>
+          <div class="item_container_right">
+            <div id="my_alert">
+              <p>You just bought Bryan tickets to Bora Bora.  He will be singing your praises</p>
+              <p id="alert_from">From:</p>
+              <p id="alert_to">To:</p>
+            </div>
+            <form id="my_form" action="#" method="post">
+              <p>From: <input id="input_from" type="text" class="datepicker"></p>
+              <p>To: <input id="input_to" type="text" class="datepicker"></p>
+              <input id="my_submit" type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

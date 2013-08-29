@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>jQuery Basic II, III</title>
+  	<link rel="stylesheet" type="text/css" href="mystyles.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> 
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  	<script src="myscript.js"></script>
+
+  </head>
+  <body>
+    <div class="all_container">
+      <h1>jQuery Exercise: Basic II, III</h1>
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Accordion</a></li>
+          <li><a href="#tabs-2">Date Picker</a></li>
+          <li><a href="#tabs-3">Dialog</a></li>
+          <li><a href="#tabs-4">Date From/To</a></li>
+          <li><a href="#tabs-5">Try a plugin</a></li>
+        </ul>
+          <div id="tabs-1">
+            <div class="item_container_left">
+              <p>Click on "First Header" and then "Second Header".</p>
+              <p>Accordion will slide elements over one another to save space and clutter on the page.</p>
+            </div>
+            <div class="item_container_right">
+              <div id="accordion">
+              <h3>First header</h3>
+              <div>First content panel</div>
+              <h3>Second header</h3>
+              <div>Second content panel</div>
+              </div>
+            </div>
+          </div>
+          <div id="tabs-2">
+            <div class="item_container_left">
+              <p>jQuery has a super easy way of implementing the now standard way of popping up a calendar to enter a date.</p>
+            </div>
+            <div class="item_container_right">
+            <p>Date: <input type="text" class="datepicker"></p>
+            </div>
+          </div>
+          <div id="tabs-3">
+            <div class="item_container_left">
+              <p>This is a floating dialog window. Press the button on the right to make it pop up.</p>
+            </div>
+            <div class="item_container_right">
+              <button id="dialog_button">Press me!</button>
+              <div id="dialog">
+                <p>Start it out hidden and make it appear at some point to make the dialog box function as an alert.</p>
+              </div>
+            </div>
+          </div>
+            <div id="tabs-4">
+            <div class="item_container_left">
+              <p>Another usage of datepicker... so when do you want to go to Bora-Bora?</p>
+            </div>
+            <div class="item_container_right">
+              <p>Date From: <input type="text" class="datepicker"></p>
+              <p>Date To: <input type="text" class="datepicker"></p>
+            </div>
+          </div>
+            <div id="tabs-5">
+            <div class="item_container_left">
+              <p>Explode Element plugin: click on the button below and the Ninja on the right will explode.</p>
+              <button id="boom">Boom</button>
+            </div>
+            <div class="item_container_right">
+              <img id="ninja" src="jquery-ninja.png"><alt="jQuery ninja again">
+            </div>
+          </div>
+
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
